@@ -13,7 +13,7 @@ public class App {
         System.out.println("Start");
         Arguments arguments = Arguments.fromMain(args);
         SaveToFile saveToFile = new SaveToFile();
-        saveToFile.creatFile(arguments.getPathToPropertiesFile());
+        saveToFile.creatFile(arguments.getPathToDataFile());
         Timer timer = new Timer();
         timer.schedule(new SaveFileRunner(arguments), 0, 100);
         
