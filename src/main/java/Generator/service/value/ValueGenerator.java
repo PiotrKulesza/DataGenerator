@@ -12,9 +12,10 @@ public class ValueGenerator {
     	Process p = Runtime.getRuntime().exec("sudo ps -A -o pcpu | tail -n+2 | paste -sd+ | bc");                                                                                                                                                     
     	BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
     	
+    	String s = stdInput.readLine();
+    	System.out.println(s);
     	
-    	
-        return Double.parseDouble(stdInput.readLine());
+        return Double.parseDouble(s);
     }
 
 }
