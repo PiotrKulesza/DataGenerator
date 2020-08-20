@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class MetricPOJO {
 
-    private Integer metricValue;
+    private double metricValue;
     private long timestamp;
 
 }

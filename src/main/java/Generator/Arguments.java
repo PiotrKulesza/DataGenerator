@@ -13,8 +13,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Arguments {
 	
-	@Option(name = "-p", usage = "path to properties file", required = true)
-    private String pathToPropertiesFile = null;
+	@Option(name = "-p", usage = "path to data file", required = true)
+    private String pathToDataFile = null;
 
     public static Arguments fromMain(String[] args) throws CmdLineException {
         return read(args);
